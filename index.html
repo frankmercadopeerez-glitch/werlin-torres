@@ -53,7 +53,6 @@
         .whatsapp-float img {
             width: 100%;
             height: auto;
-            border-radius: 50%;
         }
         .whatsapp-text {
             color: white;
@@ -86,6 +85,16 @@
             background: rgba(255, 255, 255, 0.2);
             box-shadow: 0 0 25px rgba(255, 255, 255, 0.3);
         }
+
+        .whatsapp-button-emerald {
+            background: rgba(16, 185, 129, 0.2); /* Emerald green with transparency */
+            border: 1px solid rgba(16, 185, 129, 0.5);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .whatsapp-button-emerald:hover {
+            background: rgba(16, 185, 129, 0.3);
+            box-shadow: 0 0 25px rgba(16, 185, 129, 0.6);
+        }
         
         .reveal {
             opacity: 0;
@@ -96,6 +105,17 @@
         .reveal.visible {
             opacity: 1;
             transform: translateY(0);
+        }
+
+        @media (max-width: 768px) {
+            .whatsapp-container {
+                bottom: 20px;
+                right: 20px;
+            }
+            .whatsapp-float {
+                width: 50px;
+                height: 50px;
+            }
         }
     </style>
 </head>
@@ -120,6 +140,7 @@
                 <a href="#inicio" class="text-gray-300 hover:text-white transition duration-300">Inicio</a>
                 <a href="#nosotros" class="text-gray-300 hover:text-white transition duration-300">Nosotros</a>
                 <a href="#servicios" class="text-gray-300 hover:text-white transition duration-300">Servicios</a>
+                <a href="#resultados" class="text-gray-300 hover:text-white transition duration-300">Resultados</a>
                 <a href="#reseñas" class="text-gray-300 hover:text-white transition duration-300">Reseñas</a>
                 <a href="#contacto" class="text-gray-300 hover:text-white transition duration-300">Contacto</a>
             </div>
@@ -137,6 +158,7 @@
         <a href="#inicio" class="mobile-menu-link text-2xl text-gray-300 hover:text-white">Inicio</a>
         <a href="#nosotros" class="mobile-menu-link text-2xl text-gray-300 hover:text-white">Nosotros</a>
         <a href="#servicios" class="mobile-menu-link text-2xl text-gray-300 hover:text-white">Servicios</a>
+        <a href="#resultados" class="mobile-menu-link text-2xl text-gray-300 hover:text-white">Resultados</a>
         <a href="#reseñas" class="mobile-menu-link text-2xl text-gray-300 hover:text-white">Reseñas</a>
         <a href="#contacto" class="mobile-menu-link text-2xl text-gray-300 hover:text-white">Contacto</a>
     </div>
@@ -151,7 +173,7 @@
                 <p class="text-lg text-gray-400 mb-8 max-w-3xl mx-auto">
                     Apasionados por devolverte salud, confianza y la mejor calidad de vida a través de tu sonrisa.
                 </p>
-                <a href="https://wa.me/message/WMFCXF2TNTOWP1" target="_blank" class="action-button">¡Agenda tu cita ahora!</a>
+                <a href="https://wa.me/message/WMFCXF2TNTOWP1" target="_blank" class="action-button whatsapp-button-emerald">¡Agenda tu cita ahora!</a>
             </div>
         </section>
 
@@ -166,9 +188,10 @@
                         <div class="md:w-3/5 text-center md:text-left">
                             <h2 class="text-3xl font-bold mb-4 text-white">Un Equipo Apasionado por tu Bienestar</h2>
                             <h3 class="text-xl font-semibold brand-text mb-4">Liderado por el Dr. Werlin Torres</h3>
-                            <p class="text-gray-400 leading-relaxed">
-                                Nuestro consultorio es el hogar de un equipo de especialistas apasionados por la excelencia en odontología. Nos dedicamos a ofrecer tratamientos personalizados en un ambiente de confianza y profesionalismo, utilizando tecnología de punta para garantizar resultados excepcionales.
+                            <p class="text-gray-400 leading-relaxed mb-6">
+                                Nuestro consultorio es el hogar de un equipo de especialistas apasionados por la excelencia en odontología. Nos dedicamos a ofrecer tratamientos personalizados en un ambiente de confianza y profesionalismo.
                             </p>
+                            <a href="sobre-nosotros.html" class="action-button">Saber más sobre nosotros</a>
                         </div>
                     </div>
                 </div>
@@ -242,7 +265,7 @@
                  <p class="text-gray-400 mb-8 max-w-2xl mx-auto">Barrio Villa Sandra, manzana A lote 4, edificio Latitud 13, primer piso. Cartagena, Colombia.</p>
                  <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6">
                     <a href="https://www.google.com/maps/dir/?api=1&destination=Latitud+13,+Cartagena" target="_blank" class="action-button">Cómo llegar</a>
-                    <a href="https://wa.me/message/WMFCXF2TNTOWP1" target="_blank" class="action-button">Agendar por WhatsApp</a>
+                    <a href="https://wa.me/message/WMFCXF2TNTOWP1" target="_blank" class="action-button whatsapp-button-emerald">Agendar por WhatsApp</a>
                 </div>
             </div>
         </section>
